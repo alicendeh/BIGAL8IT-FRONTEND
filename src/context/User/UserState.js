@@ -13,7 +13,7 @@ const UserState = (props) => {
         tel: '675979594',
         role: 'Alto',
         pulpitre: 'A',
-        profile: <img src={profile}></img>,
+        profile: <img src={profile} className='profile-img'></img>,
       },
     ],
   };
