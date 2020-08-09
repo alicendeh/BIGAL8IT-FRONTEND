@@ -5,6 +5,7 @@
   box-sizing: border-box;
   background-color: #fbfafa;
 }
+/* user dasshboard styling */
 
 .user-dashboard {
   display: grid;
@@ -54,4 +55,55 @@
   box-shadow: 0 5px 2px -3px gray;
   padding: 12px;
   border-top: transparent;
+}
+
+/* Profile page styling */
+
+.profile-nav {
+  background-color: #25eabb;
+  padding: 15px;
+  display: grid;
+  grid-template-columns: repeat(2, 2fr);
+  grid-gap: 78em;
+}
+
+.profile-nav i {
+  background-color: #25eabb;
+  font-size: 35px;
+}
+
+.user-profile {
+  display: flex;
+  flex-direction: column;
+  margin: 2em;
+}
+
+.profile-img2 {
+  height: 15vh;
+  width: 25vw;
+  margin: 0 auto;
+}
+
+.profile-elem i {
+  font-size: 3.9em;
+  color: rgb(71, 70, 70);
+}
+
+.profile-elem {
+  display: flex;
+  margin: 7px;
+}
+
+.profile-elem div {
+  padding-right: 50px;
+  padding-top: 15px;
+}
+
+.profile-elem div h3:first-child {
+  color: #bbb8b8;
+  font-size: 30px;
+}
+
+.profile-elem div h3:last-child {
+  font-size: 25px;
 }
