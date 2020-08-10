@@ -75,17 +75,24 @@
 .user-profile {
   display: flex;
   flex-direction: column;
-  margin: 2em;
+  margin: 1em;
+  border: 1px solid #fbfafa;
+  box-shadow: 1px 2px 5px gray;
+  height: 80vh;
+  margin: 2em auto;
+  min-width: 30%;
+  width: 30%;
 }
 
 .profile-img2 {
-  height: 15vh;
-  width: 25vw;
+  height: 20vh;
+  width: 20vw;
   margin: 0 auto;
+  text-align: center;
 }
 
 .profile-elem i {
-  font-size: 3.9em;
+  font-size: 1.7em;
   color: rgb(71, 70, 70);
 }
 
@@ -101,9 +108,22 @@
 
 .profile-elem div h3:first-child {
   color: #bbb8b8;
-  font-size: 30px;
+  font-size: 18px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 .profile-elem div h3:last-child {
+  font-size: 15px;
+}
+.name-field {
+  margin-right: 5px;
+  text-align: center;
   font-size: 25px;
+  font-family: cursive;
+}
+
+/* SIDENAV */
+
+.sidenav-show {
+  display: block;
 }
