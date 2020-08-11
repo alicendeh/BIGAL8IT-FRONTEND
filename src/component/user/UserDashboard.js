@@ -21,23 +21,23 @@ const UserDashboard = () => {
               </h3>
             </div>
           </Link>
-          <div className='container'>
+          <div className='containerc'>
             <h3>
               Les Chants <i class='fas fa-arrow-right'></i>
             </h3>
           </div>
-          <div className='container'>
+          <div className='containerc'>
             {' '}
             <h3>
               Programme De Messe <i class='fas fa-arrow-right'></i>
             </h3>
           </div>
-          <div className='container'>
+          <div className='containerc'>
             <h3>
               A propos <i class='fas fa-arrow-right'></i>
             </h3>
           </div>
-          <div className='container'>
+          <div className='containerc'>
             {' '}
             <h3>
               Quitter <i class='fas fa-arrow-right'></i>

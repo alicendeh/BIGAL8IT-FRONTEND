@@ -20,7 +20,9 @@ const UserProfile = () => {
         <a href='#sidenav' onClick={funct} style={{}}>
           <i class='fas fa-bars'></i>
         </a>
-        <i class='fas fa-cog'></i>
+        <Link to='/user/edit/profile'>
+          <i class='fas fa-cog'></i>
+        </Link>
       </nav>
       {User.map((user) => (
         <div className='user-profile'>
@@ -32,7 +34,7 @@ const UserProfile = () => {
             <div>
               <i class='fas fa-envelope'></i>
             </div>
-            <div>
+            <div className="side-cont">
               <h3>Email</h3>
               <h3>{user.email}</h3>
             </div>

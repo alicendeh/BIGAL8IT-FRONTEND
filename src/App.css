@@ -3,6 +3,7 @@
   padding: 0;
   max-width: 100%;
   box-sizing: border-box;
+
   background-color: #fbfafa;
 }
 /* user dasshboard styling */
@@ -15,10 +16,13 @@
   box-shadow: 1px 2px 5px gray;
   height: 80vh;
   margin: 3em auto;
+  font-size: -7px;
+
   min-width: 30%;
 }
 .user-dashboard h3 {
   color: #8f8787;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 .profile-img {
   width: 60%;
@@ -37,6 +41,8 @@
   width: 90%;
   border-radius: 10px;
   margin: 5px;
+  font-size: 25px;
+  font-family: cursive;
   padding: 12px;
   border-top: transparent;
 }
@@ -44,16 +50,17 @@
   background: #7bffe0;
   float: right;
 }
-.container h3 i {
+.containerc h3 i {
   float: right;
 }
-.container h3 {
+.containerc h3 {
   width: 90%;
   border-radius: 10px;
   margin: 5px;
   margin-bottom: 18px;
   box-shadow: 0 5px 2px -3px gray;
   padding: 12px;
+  font-size: 20px;
   border-top: transparent;
 }
 
@@ -94,16 +101,21 @@
 .profile-elem i {
   font-size: 1.7em;
   color: rgb(71, 70, 70);
+  padding-left: 12px;
 }
 
 .profile-elem {
   display: flex;
-  margin: 7px;
+  /* margin-right: 2px; */
 }
-
+.profile-elem div:last-child {
+  color: blue;
+  margin-top: -2em;
+  padding: 10px;
+}
 .profile-elem div {
   padding-right: 50px;
-  padding-top: 15px;
+  padding-top: -3em;
 }
 
 .profile-elem div h3:first-child {
@@ -114,11 +126,13 @@
 
 .profile-elem div h3:last-child {
   font-size: 15px;
+  padding-bottom: -90em;
 }
 .name-field {
   margin-right: 5px;
   text-align: center;
   font-size: 25px;
+  padding-top: -1em;
   font-family: cursive;
 }
 
@@ -126,4 +140,21 @@
 
 .sidenav-show {
   display: block;
+}
+
+/* EDIT PROFILE */
+
+.profile-edit {
+  height: 87vh;
+  padding-left: 7em;
+  padding-top: 7em;
+}
+
+.user-profile-edit {
+  height: 100%;
+  width: 110%;
+}
+
+#label {
+  font-size: 1.5em;
 }
