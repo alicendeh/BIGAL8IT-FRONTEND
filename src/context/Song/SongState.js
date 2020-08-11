@@ -1,6 +1,7 @@
 import SongReducer from './SongReducer';
 import SongContext from './SongContext';
 import React, { useReducer } from 'react';
+import profile from '../../images/img1.jpg';
 
 const SongState = (props) => {
   const initialState = {
@@ -13,6 +14,7 @@ const SongState = (props) => {
         type: 'type-a',
         title: 'tit-a',
         lyrics: 'lorem ipsum dolor sit amen dir ascum passiub ',
+        profile: <img src={profile} className='profile-img'></img>,
       },
     ],
   };

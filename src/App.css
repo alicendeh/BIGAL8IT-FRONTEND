@@ -174,3 +174,15 @@
   margin-top: -15em;
   margin-left: 28em;
 }
+
+/* user view music */
+.search-bar {
+  width: 40%;
+  border-radius: 8px;
+}
+
+.searchg {
+  background-color: #fbfafa;
+  border: none;
+  box-shadow: red;
+}

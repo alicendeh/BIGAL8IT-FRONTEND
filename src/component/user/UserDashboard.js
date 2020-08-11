@@ -21,11 +21,13 @@ const UserDashboard = () => {
               </h3>
             </div>
           </Link>
-          <div className='containerc'>
-            <h3>
-              Les Chants <i class='fas fa-arrow-right'></i>
-            </h3>
-          </div>
+          <Link to='/user/edit/profile'>
+            <div className='containerc'>
+              <h3>
+                Les Chants <i class='fas fa-arrow-right'></i>
+              </h3>
+            </div>
+          </Link>
           <div className='containerc'>
             {' '}
             <h3>
