@@ -16,7 +16,7 @@ const UserEditProfile = () => {
       {User.map((user) => (
         <div className='user-profile-edit'>
           <div class='row profile-edit'>
-            <form class='col s11'>
+            <form class='col s10'>
               <div class='row'>
                 <div class='input-field col s6'>
                   <input
@@ -105,7 +105,14 @@ const UserEditProfile = () => {
               </div>
             </form>
           </div>
-          <button>Update Profile</button>
+          <div className='btnProfile'>
+            {' '}
+            <input
+              type='submit'
+              value='Update Profile'
+              className='profile-btn'
+            />
+          </div>
         </div>
       ))}
     </div>
