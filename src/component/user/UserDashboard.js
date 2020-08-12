@@ -21,7 +21,7 @@ const UserDashboard = () => {
               </h3>
             </div>
           </Link>
-          <Link to='/user/edit/profile'>
+          <Link to='/users/song/view'>
             <div className='containerc'>
               <h3>
                 Les Chants <i class='fas fa-arrow-right'></i>

@@ -186,3 +186,44 @@
   border: none;
   box-shadow: red;
 }
+
+.view-div {
+  display: flex;
+  box-shadow: 0 5px 2px -3px gray;
+}
+
+.card-content p {
+  font-size: 20px;
+  width: 100%;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  height: 10%;
+  line-height: 40px;
+  color: #000;
+}
+
+.header {
+  font-family: cursive;
+  color: #22ad8d;
+  font-size: 30px;
+}
+
+.card-action {
+  font-size: 20px;
+  color: rgb(138, 138, 138);
+}
+
+.modal-pop-up {
+  height: 100%;
+}
+
+.modal-content h4:first-child {
+  text-align: center;
+  color: #22ad8d;
+  font-family: cursive;
+}
+
+.author {
+  text-align: center;
+  font-size: 22px;
+  color: #22ad8d;
+}

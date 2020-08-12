@@ -25,7 +25,11 @@ function App() {
               <Route path='/user/dashboard' component={UserDashboard} exact />
               <Route path='/user/profile' component={UserProfile} exact />
               <Route path='/Sidenav' component={Sidenav} exact />
-              <Route path='/user/edit/profile' component={UserViewSong} exact />
+              <Route
+                path='/user/edit/profile'
+                component={UserEditProfile}
+                exact
+              />
               <Route path='/' component={Home} exact />
               <Route path='/users/song/view' component={UserViewSong} exact />
             </Switch>

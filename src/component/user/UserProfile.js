@@ -34,7 +34,7 @@ const UserProfile = () => {
             <div>
               <i class='fas fa-envelope'></i>
             </div>
-            <div className="side-cont">
+            <div className='side-cont'>
               <h3>Email</h3>
               <h3>{user.email}</h3>
             </div>
