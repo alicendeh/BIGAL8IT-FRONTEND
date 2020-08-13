@@ -38,16 +38,33 @@ const SongState = (props) => {
         type: 'type-a',
         title: 'Wisdom of the  wise',
         lyrics: 'lorem ipsum dolor sit  amen dir ascum passiub  tdd',
-        profile: <img src='https://lorempixel.com/100/190/nature/1'></img>,
+        profile: (
+          <img
+            src='https://lorempixel.com/100/190/nature/1'
+            className='user-profile-modal '
+          ></img>
+        ),
       },
     ],
+    current: null,
   };
   const [state, dispatch] = useReducer(SongReducer, initialState);
+  // set current
+  const setCurrent = (song) => {
+    dispatch({ type: 'SET_CURRENT', payload: song });
+  };
 
+  //clear current
+  const clearCurrent = () => {
+    dispatch({ type: 'CLEAR_CURRENT' });
+  };
   return (
     <SongContext.Provider
       value={{
         Song: state.Song,
+        current: state.current,
+        setCurrent,
+        clearCurrent,
       }}
     >
       {props.children}

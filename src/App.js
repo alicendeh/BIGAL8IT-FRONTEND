@@ -11,6 +11,8 @@ import M from 'materialize-css/dist/js/materialize.min.js';
 import Home from './component/Home';
 import SongState from './context/Song/SongState';
 import UserViewSong from './component/song/UserViewSong';
+import AddModal from './component/song/UserViewSongModal';
+import ProfileModal from './component/song/ProfileModal';
 
 function App() {
   useEffect(() => {
@@ -33,6 +35,8 @@ function App() {
               <Route path='/' component={Home} exact />
               <Route path='/users/song/view' component={UserViewSong} exact />
             </Switch>
+            <AddModal />
+            <ProfileModal />
           </Fragment>
         </Router>
       </SongState>
