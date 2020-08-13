@@ -14,27 +14,9 @@ const UserViewSong = () => {
       <br />
       <br />
 
-      <form>
-        <div class='center row'>
-          <div class='col s12 '>
-            <div class='row' id='topbarsearch'>
-              <div class='input-field col s12 s12 red-text'>
-                <i class='red-text material-icons prefix'>search</i>
-                <input
-                  type='text'
-                  placeholder='search'
-                  id='autocomplete-input'
-                  class='autocomplete red-text'
-                />
-              </div>
-            </div>
-          </div>
-        </div>
-      </form>
-
       {Song.map((song) => (
         <div key={song.id}>
-          <div class='col s12 m7'>
+          <div class='col s12 m7 main-card-content'>
             <h2 class='header'>{song.title}</h2>
             <div class='card horizontal'>
               <div class='card-image'>{song.profile}</div>
@@ -44,6 +26,7 @@ const UserViewSong = () => {
                     <p>{song.lyrics}</p>
                   </div>
                 </a>
+
                 <div class='card-action'>{song.author}</div>
               </div>
             </div>

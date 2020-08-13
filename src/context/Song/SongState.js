@@ -15,7 +15,7 @@ const SongState = (props) => {
         type: 'type-a',
         title: 'praise and harmony',
         lyrics:
-          'Lorem ipsum dolor sit amet consectetur adipisicing elit Aliquam laboriosam architecto excepturi ipsa corporis       saepe id ad magni, enim ullam?',
+          'Lorem ipsum dolor sit amet consectetur adipisicing elit Aliquam laboriosam architecto excepturi ipsa corporis       saepe id ad magni, enim ullam?Lorem ipsum dolor sit amet consectetur adipisicing elit Aliquam laboriosam architecto excepturi ipsa corporis       saepe id ad magni, enim ullam?Lorem ipsum dolor sit amet consectetur adipisicing elit Aliquam laboriosam architecto excepturi ipsa corporis       saepe id ad magni, enim ullam?Lorem ipsum dolor sit amet consectetur adipisicing elit Aliquam laboriosam architecto excepturi ipsa corporis       saepe id ad magni, enim ullam?',
         profile: <img src='https://lorempixel.com/100/190/nature/3'></img>,
       },
       {

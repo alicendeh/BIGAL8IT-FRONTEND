@@ -227,3 +227,8 @@
   font-size: 22px;
   color: #22ad8d;
 }
+
+.main-card-content {
+  width: 80%;
+  margin: 0 auto;
+}
