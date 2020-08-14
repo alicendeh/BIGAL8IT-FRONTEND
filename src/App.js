@@ -13,6 +13,10 @@ import SongState from './context/Song/SongState';
 import UserViewSong from './component/song/UserViewSong';
 import AddModal from './component/song/UserViewSongModal';
 import ProfileModal from './component/song/ProfileModal';
+import AdminState from './context/Admin/AdminState';
+import AdminDashboard from './component/admin/AdminDashboard';
+import AdminEditProfile from './component/admin/AdminEditProfile';
+import AdminProfile from './component/admin/AdminProfile';
 
 function App() {
   useEffect(() => {
@@ -21,24 +25,37 @@ function App() {
   return (
     <UserState>
       <SongState>
-        <Router>
-          <Fragment>
-            <Switch>
-              <Route path='/user/dashboard' component={UserDashboard} exact />
-              <Route path='/user/profile' component={UserProfile} exact />
-              <Route path='/Sidenav' component={Sidenav} exact />
-              <Route
-                path='/user/edit/profile'
-                component={UserEditProfile}
-                exact
-              />
-              <Route path='/' component={Home} exact />
-              <Route path='/users/song/view' component={UserViewSong} exact />
-            </Switch>
-            <AddModal />
-            <ProfileModal />
-          </Fragment>
-        </Router>
+        <AdminState>
+          <Router>
+            <Fragment>
+              <Switch>
+                <Route path='/user/dashboard' component={UserDashboard} exact />
+                <Route
+                  path='/admin/dashboard'
+                  component={AdminDashboard}
+                  exact
+                />
+                <Route path='/user/profile' component={UserProfile} exact />
+                <Route path='/admin/profile' component={AdminProfile} exact />
+
+                <Route
+                  path='/user/edit/profile'
+                  component={UserEditProfile}
+                  exact
+                />
+                <Route
+                  path='/admin/edit/profile'
+                  component={AdminEditProfile}
+                  exact
+                />
+                <Route path='/' component={Home} exact />
+                <Route path='/users/song/view' component={UserViewSong} exact />
+              </Switch>
+              <AddModal />
+              <ProfileModal />
+            </Fragment>
+          </Router>
+        </AdminState>
       </SongState>
     </UserState>
   );

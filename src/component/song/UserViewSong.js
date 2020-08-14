@@ -13,6 +13,23 @@ const UserViewSong = () => {
       </nav>
       <br />
       <br />
+      <form>
+        <div class='center row'>
+          <div class='col s7 '>
+            <div class='row' id='topbarsearch'>
+              <div class='input-field col s6 s12 red-text'>
+                <i class='red-text material-icons prefix'>search</i>
+                <input
+                  type='text'
+                  placeholder='search'
+                  id='autocomplete-input'
+                  class='autocomplete red-text'
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </form>
 
       {Song.map((song) => (
         <div key={song.id}>

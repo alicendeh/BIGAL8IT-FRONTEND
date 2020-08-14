@@ -1,27 +1,27 @@
 import React, { useContext } from 'react';
-import UserContext from '../../context/User/UserContext';
+import AdminContext from '../../context/Admin/AdminContext';
 import '../../App.css';
 import { Link } from 'react-router-dom';
 
-const UserDashboard = () => {
-  const userContext = useContext(UserContext);
-  const { User } = userContext;
+const AdminDashboard = () => {
+  const adminContext = useContext(AdminContext);
+  const { Admin } = adminContext;
   return (
     <div className='user-dashboard'>
-      {User.map((user) => (
+      {Admin.map((admin) => (
         <div className='dashboard-frame'>
-          <h3 className='profile-img'>{user.profile}</h3>
+          <h3 className='profile-img'>{admin.profile}</h3>
           <br />
           <br />
-          <Link to='/user/profile'>
+          <Link to='/admin/profile'>
             <div className='container1'>
               {' '}
               <h3 className='main'>
-                {user.fname} {user.lname} <i class='fas fa-arrow-right'></i>
+                {admin.fname} {admin.lname} <i class='fas fa-arrow-right'></i>
               </h3>
             </div>
           </Link>
-          <Link to='/users/song/view'>
+          <Link to=''>
             <div className='containerc'>
               <h3>
                 Les Chants <i class='fas fa-arrow-right'></i>
@@ -47,9 +47,9 @@ const UserDashboard = () => {
           </div>
         </div>
       ))}
-      <h3>User Dashboard</h3>
+      <h3>admin Dashboard</h3>
     </div>
   );
 };
 
-export default UserDashboard;
+export default AdminDashboard;
