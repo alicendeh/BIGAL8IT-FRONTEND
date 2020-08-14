@@ -17,6 +17,7 @@ import AdminState from './context/Admin/AdminState';
 import AdminDashboard from './component/admin/AdminDashboard';
 import AdminEditProfile from './component/admin/AdminEditProfile';
 import AdminProfile from './component/admin/AdminProfile';
+import DashboardRender from './RenderUIBasedOnRole/DashboardRender';
 
 function App() {
   useEffect(() => {
@@ -49,6 +50,7 @@ function App() {
                   exact
                 />
                 <Route path='/' component={Home} exact />
+                <Route path='/render' component={DashboardRender} exact />
                 <Route path='/users/song/view' component={UserViewSong} exact />
               </Switch>
               <AddModal />

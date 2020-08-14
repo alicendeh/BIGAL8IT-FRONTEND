@@ -20,7 +20,7 @@ const UserState = (props) => {
   };
   const [state, dispatch] = useReducer(UserReducer, initialState);
   return (
-    <UserContext.Provider value={{ User: state.User }}>
+    <UserContext.Provider value={{ User: state.User, post: state.User.post }}>
       {props.children}
     </UserContext.Provider>
   );
