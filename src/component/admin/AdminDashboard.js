@@ -21,7 +21,7 @@ const AdminDashboard = () => {
               </h3>
             </div>
           </Link>
-          <Link to=''>
+          <Link to='/admin/song/board'>
             <div className='containerc'>
               <h3>
                 Les Chants <i class='fas fa-arrow-right'></i>
