@@ -5,7 +5,7 @@ const AdminSongBoard = () => {
   return (
     <div className='fixed-action-btn'>
       <a
-        href='#add-log-modal'
+        href='#add-song-modal'
         className='btn-floating btn-large  darken-2 modal-trigger'
       >
         <i className='large material-icons red darken-2 white-text'>add</i>

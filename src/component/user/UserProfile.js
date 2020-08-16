@@ -3,27 +3,73 @@ import UserContext from '../../context/User/UserContext';
 import '../../App.css';
 import { Link } from 'react-router-dom';
 import Sidenav from './Sidenav';
+import img3 from '../../images/gg.jpg';
+import img2 from '../../images/img1.jpg';
 
 const UserProfile = () => {
   const userContext = useContext(UserContext);
   const { User } = userContext;
 
-  const [sidenav, setSidenav] = useState({ val: 0 });
-  const { val } = sidenav;
-
-  const funct = () => {
-    setSidenav({ val: 1 });
-  };
   return (
     <div>
       <nav className='profile-nav'>
-        <a href='#sidenav' onClick={funct} style={{}}>
+        <a href='#sidenav'>
           <i class='fas fa-bars'></i>
         </a>
         <Link to='/user/edit/profile'>
           <i class='fas fa-cog'></i>
         </Link>
       </nav>
+      <ul id='slide-out' class='sidenav'>
+        <li>
+          <div class='user-view'>
+            <div class=' bkg '>
+              <img src={img3} />
+            </div>
+            <a href='#user'>
+              <img class='circle' src={img2} />
+            </a>
+            <a href='#name'>
+              <span class='black-text name'>Alice Ndeh</span>
+            </a>
+            <a href='#email'>
+              <span class='black-text email'>alicendeh16@gmail.com</span>
+            </a>
+          </div>
+        </li>
+        <Link to='/users/song/view'>
+          <div className='containerc'>
+            <h3>
+              Les Chants <i class='fas fa-arrow-right'></i>
+            </h3>
+          </div>
+        </Link>
+        <div className='containerc'>
+          {' '}
+          <h3>
+            Programme De Messe <i class='fas fa-arrow-right'></i>
+          </h3>
+        </div>
+        <div className='containerc'>
+          <h3>
+            A propos <i class='fas fa-arrow-right'></i>
+          </h3>
+        </div>
+        <div className='containerc '>
+          {' '}
+          <h3>
+            Quitter <i class='fas fa-arrow-right'></i>
+          </h3>
+        </div>
+        <li>
+          <a class='waves-effect' href='#!'>
+            Third Link With Waves
+          </a>
+        </li>
+      </ul>
+      <a href='#' data-target='slide-out' class='sidenav-trigger show-on-large'>
+        <i class='material-icons'>menu</i>
+      </a>
       {User.map((user) => (
         <div className='user-profile'>
           <h3 className='profile-img2'>{user.profile}</h3>

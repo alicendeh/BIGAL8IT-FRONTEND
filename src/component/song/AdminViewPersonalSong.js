@@ -1,10 +1,10 @@
-import React, { useContext } from 'react';
+import React, { useContext, useEffect } from 'react';
 import SongContext from '../../context/Song/SongContext';
 import img3 from '../../images/gg.jpg';
 import img2 from '../../images/img2.jpg';
 import { Link } from 'react-router-dom';
 
-const UserViewSong = () => {
+const AdminViewPersonalSong = () => {
   const songContext = useContext(SongContext);
   const { Song, setCurrent } = songContext;
   return (
@@ -64,7 +64,6 @@ const UserViewSong = () => {
       <a href='#' data-target='slide-out' class='sidenav-trigger show-on-large'>
         <i class='material-icons'>menu</i>
       </a>
-
       <br />
       <br />
       <form>
@@ -84,29 +83,18 @@ const UserViewSong = () => {
           </div>
         </div>
       </form>
-
       {Song.map((song) => (
-        <div key={song.id}>
-          <div className='col s12 m7 main-card-content'>
-            <h2 className='header'>{song.title}</h2>
-            <div className='card horizontal'>
-              <a href='#profileModal' className='modal-trigger'>
-                <div className='card-image' onClick={() => setCurrent(song)}>
-                  {song.profile}
+        <div className='col s12 m7 main-card-content'>
+          <h2 className='header'>{song.title}</h2>
+          <div className='card horizontal'>
+            <div className='card-stacked'>
+              <a href='#adminSongModal' className='modal-trigger'>
+                <div className='card-content' onClick={() => setCurrent(song)}>
+                  <p>{song.lyrics}</p>
                 </div>
               </a>
-              <div className='card-stacked'>
-                <a href='#songModal' className='modal-trigger'>
-                  <div
-                    className='card-content'
-                    onClick={() => setCurrent(song)}
-                  >
-                    <p>{song.lyrics}</p>
-                  </div>
-                </a>
 
-                <div className='card-action'>{song.author}</div>
-              </div>
+              <div className='card-action'>{song.author}</div>
             </div>
           </div>
         </div>
@@ -115,4 +103,4 @@ const UserViewSong = () => {
   );
 };
 
-export default UserViewSong;
+export default AdminViewPersonalSong;

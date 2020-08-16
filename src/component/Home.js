@@ -17,7 +17,22 @@ const Home = () => {
             borderRadius: '7px',
           }}
         >
-          Click Me
+          User Board
+        </button>
+      </Link>
+      <Link to='/admin/dashboard'>
+        <button
+          style={{
+            color: 'white',
+            backgroundColor: 'teal',
+            border: '1px solid transparent',
+            width: '30%',
+            padding: '7px',
+            margin: '10px',
+            borderRadius: '7px',
+          }}
+        >
+          Admin Board
         </button>
       </Link>
     </div>

@@ -2,6 +2,8 @@ import React, { useContext } from 'react';
 import AdminContext from '../../context/Admin/AdminContext';
 import '../../App.css';
 import { Link } from 'react-router-dom';
+import img3 from '../../images/gg.jpg';
+import img2 from '../../images/img2.jpg';
 
 const AdminEditProfile = () => {
   const adminContext = useContext(AdminContext);
@@ -13,6 +15,56 @@ const AdminEditProfile = () => {
           <i class='fas fa-bars'></i>
         </a>
       </nav>
+      <ul id='slide-out' class='sidenav'>
+        <li>
+          <div class='user-view'>
+            <div class=' bkg '>
+              <img src={img3} />
+            </div>
+            <a href='#user'>
+              <img class='circle' src={img2} />
+            </a>
+            <a href='#name'>
+              <span class='black-text name'>Alice Ndeh</span>
+            </a>
+            <a href='#email'>
+              <span class='black-text email'>alicendeh16@gmail.com</span>
+            </a>
+          </div>
+        </li>
+        <Link to='/users/song/view'>
+          <div className='containerc'>
+            <h3>
+              Les Chants <i class='fas fa-arrow-right'></i>
+            </h3>
+          </div>
+        </Link>
+        <div className='containerc'>
+          {' '}
+          <h3>
+            Programme De Messe <i class='fas fa-arrow-right'></i>
+          </h3>
+        </div>
+        <div className='containerc'>
+          <h3>
+            A propos <i class='fas fa-arrow-right'></i>
+          </h3>
+        </div>
+        <div className='containerc '>
+          {' '}
+          <h3>
+            Quitter <i class='fas fa-arrow-right'></i>
+          </h3>
+        </div>
+        <li>
+          <a class='waves-effect' href='#!'>
+            Third Link With Waves
+          </a>
+        </li>
+      </ul>
+      <a href='#' data-target='slide-out' class='sidenav-trigger show-on-large'>
+        <i class='material-icons'>menu</i>
+      </a>
       {Admin.map((admin) => (
         <div className='user-profile-edit'>
           <div class='row profile-edit'>

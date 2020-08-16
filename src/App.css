@@ -240,3 +240,32 @@
   font-family: Arial, Helvetica, sans-serif;
   margin: 10px;
 }
+
+/* .admin-song-modal {
+  width: 60%;
+  height: 100%;
+} */
+/* admin functionalities */
+.add-admin-song {
+  width: 70%;
+  border-radius: 10px;
+  padding: 7px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+/* .bkg {
+  width: 100%;
+} */
+
+.sidenav-li {
+  border: 1px solid #fbfafa;
+  box-shadow: 1px 2px 5px gray;
+
+  margin: 3em auto;
+  font-size: -7px;
+}
+
+.cont:hover {
+  box-shadow: 0 10px 11px -3px rgb(119, 42, 42);
+}

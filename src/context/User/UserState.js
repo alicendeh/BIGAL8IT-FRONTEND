@@ -12,7 +12,7 @@ const UserState = (props) => {
         email: 'alicendeh16@gmail.com',
         tel: '675979594',
         role: 'Alto',
-        post: 'user',
+        post: 'admin',
         pulpitre: 'Dance folks',
         profile: <img src={profile} className='profile-img'></img>,
       },
